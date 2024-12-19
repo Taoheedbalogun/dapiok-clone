@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "./Assets/preview-section.png";
+import image from "../Assets/preview-section.png";
 
 const Fourth = () => {
   return (

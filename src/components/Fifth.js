@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Picture from "../Assets/design-section.png";
+import image from "../Assets/track-section.png";
 
-const Third = () => {
+const Fifth = () => {
   return (
     <Container>
       <Wrapper>
@@ -10,29 +10,29 @@ const Third = () => {
           <Line></Line>
         </Vertical>
         <Content>
-          <Title>Design</Title>
+          <Title>Track</Title>
           <Sub>
-            More than just editing an openAPI doc, you can define the model
-            relationship, draw sequence diagram to understand better the logic
-            behind each API.
+            Follow the updates and always keeping everybody aligned on the
+            latest API. Review the API designing before the performance issue
+            happens.
           </Sub>
+          <Image src={image} />
         </Content>
-        <Image src={Picture} />
       </Wrapper>
     </Container>
   );
 };
 
-export default Third;
+export default Fifth;
 
 const Image = styled.img`
-  width: 870px;
-  height: 600px;
+  width: 900px;
+  height: 450px;
   object-fit: contain;
+  margin-bottom: 50px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
-    height: 100%;
   }
 `;
 const Content = styled.div`
@@ -48,10 +48,9 @@ const Content = styled.div`
 const Title = styled.div`
   font-size: 60px;
   font-weight: bold;
-  color: #a475c8;
+  color: #ff8d28;
   margin-bottom: 25px;
 `;
-
 const Sub = styled.div`
   font-size: 20px;
   color: #8792a2;
@@ -61,26 +60,6 @@ const Sub = styled.div`
     Simsun, Arial, sans-self;
   margin-bottom: 65px;
 `;
-
-const Vertical = styled.div`
-  position: relative;
-`;
-
-const Line = styled.div`
-  margin-bottom: 150px;
-  :after {
-    content: "";
-    position: absolute;
-    color: white;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 100px;
-    background-color: white;
-    opacity: 0.5;
-  }
-`;
-
 const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -97,4 +76,22 @@ const Wrapper = styled.div`
   align-items: center;
   padding-top: 150px;
   justify-content: center;
+`;
+
+const Vertical = styled.div`
+  position: relative;
+`;
+const Line = styled.div`
+  margin-bottom: 150px;
+  :after {
+    content: "";
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.5;
+  }
 `;
